@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(39, 40, 41);
+}
+.Menu{
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: antiquewhite;
+    padding: 10px;
+    height: 60px;
+    list-style: none;
+}
+.Logo>a{
+    font-size: 25px;
+    color: red;
+    text-decoration: none;
+}
+.Menu>.Pags>a{
+    margin: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.Menu>.Pags>a:hover{
+    color: rgb(226, 9, 9);
+    transition: 500ms ;
+}
+.Menu>.Pags{
+    display: flex;
+    gap: 15px;
+}
+.Logo{
+    margin: 2px;
+    cursor: pointer;
+}
+.Hero{
+    background-image: url(../Images/Estacionamiento12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    color: rgb(0, 0, 0);
+    height: 400px;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+}
+.Hero>h3{
+    font-size: 30px;
+}
+.Contactanos{
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.Logo>a>img{
+    width: 75px;
+    height: 45px;
+    object-fit: cover;
+}
+.Map{
+    height: 500px;
+    min-width: 750px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+.InfoCont{
+    display: flex; 
+    
+}
+.InfoCont>h2{
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+.Ropa{
+    text-align: center;
+}
+.Ropa>h2{
+    color: white;
+    font-size: 35px;
+    padding: 30px;
+}
+footer{
+    height: 100px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    align-content: center;
+    text-align: center;
+}
+footer>h2{
+    font-weight: bold;
+}
+
+.ContainerCards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    padding: 20px;
+    background-color: rgb(39, 40, 41);
+    padding-bottom: 80px;
+}
+.ContainerCards1{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    padding: 20px;
+    background-color: rgb(39, 40, 41);
+}
+.Cards{
+    background-color: rgb(233, 233, 233);
+    max-width: 500px;
+    max-height: 100px;
+    text-align: justify;
+    overflow: hidden;
+    transition: 500ms;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.Cards1{
+    width: 300px;
+    height: 400px;
+    perspective: 1000px; 
+    cursor: pointer;
+
+}
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.Cards1:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-front {
+    background-color: white;
+}
+
+.card-back {
+    background-color: #ffffff;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 20px;
+    text-align: center;
+}
+img {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+.Cards:hover{
+    max-height: 250px;
+    
+}
+.Cards1:hover{
+    max-height: 650px;
+}
+.ContainerCards>.Cards>img{
+    width: 500px;
+    height: 100px;
+    object-fit: cover;
+    
+}
+
+.ContainerCards1>.Cards1>img{
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    
+}
+.ContainerCards>.Cards>h3{
+    font-size: 15px;
+    padding: 5px;
+}
+.ContainerCards1>.Cards1>h3{
+    font-size: 15px;
+    padding: 5px;
+}
+.ContainerCards>.Cards>h2{
+    padding: 5px;  
+}
+.ContainerCards1>.Cards1>h2{
+    padding: 5px;  
+}
+.InfoCont{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.ContCall{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 60px;
+}
+.ContCall>.item>img{
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+}
+.ContCall>.item{
+    background-color: rgba(255, 0, 0, 0.466);
+    border-radius: 10px;
+    padding: 3px;
+    
+}
+section {
+    padding: 20px;
+    
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+section h2 {
+    color: #000000;
+    font-size: 30px;
+    
+}
+section p {
+    color: #000000;
+    line-height: 1.6;
+    margin: 10px 0;
+    
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #555;
+}
+
+.Video>iframe{
+    
+    object-fit: cover;
+}
+.Video {
+    text-align: center;
+}
+.video-container {
+    position: relative;
+    width: 100%; 
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1200px) {
+    .Menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    .Hero {
+        height: 300px;
+        font-size: 28px;
+    }
+    
+}
+

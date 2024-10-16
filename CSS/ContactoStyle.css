@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+
+}
+.Menu{
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: antiquewhite;
+    padding: 10px 20px;
+    list-style: none;
+}
+.Logo>a{
+    font-size: 25px;
+    color: red;
+    text-decoration: none;
+}
+.Menu>.Pags>a{
+    margin: 2px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.Menu>.Pags{
+    display: flex;
+    gap: 15px;
+}
+.Logo{
+    margin: 2px;
+    cursor: pointer;
+}
